@@ -1,0 +1,60 @@
+{
+  "lang": "en",
+  "name": "pipeline",
+  "version": "0.0.0",
+  "spacy_version": ">=3.8.5,<3.9.0",
+  "description": "",
+  "author": "",
+  "email": "",
+  "url": "",
+  "license": "",
+  "spacy_git_version": "d0c705c",
+  "vectors": {
+    "width": 0,
+    "vectors": 0,
+    "keys": 0,
+    "name": null,
+    "mode": "default"
+  },
+  "labels": {
+    "tok2vec": [],
+    "ner": [
+      "CASE_COUNT",
+      "COURT",
+      "PARTY"
+    ]
+  },
+  "pipeline": [
+    "tok2vec",
+    "ner"
+  ],
+  "components": [
+    "tok2vec",
+    "ner"
+  ],
+  "disabled": [],
+  "performance": {
+    "ents_f": 0.9925564521173453,
+    "ents_p": 0.9923702313946217,
+    "ents_r": 0.9927427427427428,
+    "ents_per_type": {
+      "PARTY": {
+        "p": 0.9938987187309335,
+        "r": 0.9731182795698925,
+        "f": 0.9833987322668276
+      },
+      "COURT": {
+        "p": 0.9919583727530747,
+        "r": 0.9982545223738496,
+        "f": 0.9950964884530212
+      },
+      "CASE_COUNT": {
+        "p": 1.0,
+        "r": 0.875,
+        "f": 0.9333333333333333
+      }
+    },
+    "tok2vec_loss": 1026.8830223739255,
+    "ner_loss": 216.5792236328125
+  }
+}
